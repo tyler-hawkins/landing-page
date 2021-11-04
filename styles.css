@@ -51,6 +51,7 @@ button, .action {
 	border: 2px solid #3882F6;
 }
 
+/* Button inside Call to action container */
 .action button {
 	border: 2px solid #F9FAF8;
 }
