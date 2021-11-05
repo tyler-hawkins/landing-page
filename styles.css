@@ -1,73 +1,190 @@
-/* Header, Footer, and Hero background */
-.header, .hero, .footer {
-	background-color: #1F2937;
+body {
+	margin: 0;
+	font-family: "Roboto", Arial;
 }
 
-/* Header logo */
+button {
+	cursor: pointer;
+}
+
+.header, .hero, .footer {
+	background-color: #1F2937;
+	margin: 0;
+	display: flex;
+	padding: 0 20%;
+	padding-bottom: 100px;
+}
+
+.header {
+	padding-top: 25px;
+}
+
 .header h2 {
 	color: #F9FAF8;
 	font-size: 24px;
+	margin: 0;
+	flex: 1;
 }
 
-/* Hero Secondary text, Header Link text */
+.header a {
+	margin-left: 30px;
+	transition: color 100ms;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: #b9babd;
+}
+
+.hero {
+	gap: 25px;
+	justify-content: space-between;
+}
+
 .hero p, .header a {
 	color: #E5E7EB;
 	font-size: 18px;
 }
 
-/* Hero Main text */
-.hero h1 {
+.hero-content h1 {
 	color: #F9FAF8;
 	font-weight: bolder;
 	font-size: 48px;
+	margin: 0;
 }
 
-/* Information header text */
+.hero-content p {
+	margin: 0 
+}
+
+.hero-content {
+	display: flex;
+	flex-flow: column wrap;
+	flex: 1;
+	padding-right: 40px;
+	justify-content: space-between;
+}
+
+.hero button, .action-button button {
+	font-weight: bold;
+	width: 115px;
+	height: 35px;
+	background-color: #3882F6;
+	color: #F9FAF8;
+	border: 2px solid #3882F6;
+	border-radius: 8px;
+	transition: color 100ms, background-color 100ms;
+}
+
+.hero button:hover, .action-button button:hover {
+	color: #3882F6;
+	background-color: #F9FAF8;
+}
+
+.hero-img {
+	height: 100%;
+	width: auto;
+	color: #F9FAF8;
+	text-align: center;
+	line-height: 225px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.information {
+	margin-bottom: 100px;
+}
+
+.information-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
 .information h2 {
 	color: #1F2937;
 	font-size: 36px;
-	font-weight: bolder;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
 }
 
-/* Information content */
-.information img {
-	border: 2px solid #3882F6;
-	border-radius: 8px;
+.information-item img {
+	border: 4px solid #3882F6;
+	border-radius: 24px;
+	width: 175px;
+	height: 175px;
 }
 
-/* Quote background and quote text */
+.information-item p {
+	margin: 8px;
+	color: #1F2937;
+	font-size: 18px;
+	width: 175px;
+	text-align: center;
+}
+
 .quote {
 	background-color: #E5E7EB;
-	font-style: italic;
-	font-size: 36px;
 	color: #1F2937;
+	padding: 150px 25%;
 }
 
-/* Button and Call to action container */
-button, .action {
+.quote p {
+	font-style: italic;
+	font-size: 36px;
+	margin: 0;
+}
+
+.quote strong {
+	font-size: 24px;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+}
+
+.action {
+	display: flex;
+	flex-flow: row nowrap;
 	background-color: #3882F6;
 	color: #F9FAF8;
 	border-radius: 8px;
 	border: 2px solid #3882F6;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 100px 20%;
 }
 
-/* Button inside Call to action container */
-.action button {
+.action-content {
+	padding: 50px 10px;
+}
+
+.action-content h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.action-button button {
+	background-color: #3882F6;
+	color: #F9FAF8;
 	border: 2px solid #F9FAF8;
 }
 
-/* Call to action header */
-.action h3 {
-	font-size: 24px;
-}
-
-/* Call to action subtext */
-.action p {
+.action-content p {
 	font-size: 18px;
+	margin: 0;
 }
 
-/* Footer text */
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
 .footer p {
+	margin: 35px;
 	font-size: 18px;
 	color: #E5E7EB;
 }
